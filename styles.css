@@ -203,3 +203,27 @@ header{
 }.testimonial-switch-buttons button:hover{
   background-color: #f25f3a;
 }
+
+.simplify-section{
+  background-color: #f25f3a;
+  background-image: url('./images/bg-simplify-section-mobile.svg');
+  background-position: 0% 60%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5.5em 1em;
+}
+
+.simplify-section p{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: .3em;
+}.simplify-section button{
+  background-color: #fff;
+  color: #f25f3a;
+  margin: .5em auto;
+  font-weight: 500;
+}
