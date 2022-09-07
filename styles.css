@@ -54,6 +54,30 @@ nav{
   border: none;
   outline: none;
   background-color: transparent;
+}.mobileNav{
+  position: absolute;
+  display: none;
+  width: 90%;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}.mobileNav ul{
+  list-style: none;
+  padding: 3em 0%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: center;
+  border-radius: 5px;
+}.mobileNav a{
+  text-decoration: none;
+  color: #242d52;
+  font-size: 1rem;
+  font-weight: 700;
+}.mobileNav a:hover, .mobileNav a:focus{
+  color: #9095a7;
 }
 header{
   padding: 0 2.5%;
