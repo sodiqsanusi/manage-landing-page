@@ -30,6 +30,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 button{
   cursor: pointer;
+  transition: .3s;
+}button:hover, button:focus{
+  opacity: 80%;
+  transform: scale(0.98);
 }
 
 .nav-header{
@@ -258,6 +262,8 @@ footer{
   background-color: #f25f3a;
   padding: .7em 0;
   border-radius: 27px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .footerLinks-container{
@@ -276,6 +282,8 @@ footer{
   text-decoration: none;
   font-weight: 400;
   line-height: 2;
+}.footerLinks-container a:hover, .footerLinks-container a:focus{
+  color: #f25f3a;
 }
 .footerImg-Links ul{
   width: 95%;
@@ -288,7 +296,10 @@ footer{
   justify-content: space-between;
 }.footerImg-Links img{
   transform: scale(1.4);
-}.footerImg-Links div{
+}.footerImg-Links img:hover, .footerImg-Links img:focus{
+  filter: invert(62%) sepia(44%) saturate(1644%) hue-rotate(336deg) brightness(102%) contrast(101%);
+}
+.footerImg-Links div{
   display: flex;
   align-items: center;
   justify-content: center;
