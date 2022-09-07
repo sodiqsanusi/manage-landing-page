@@ -17,6 +17,15 @@
     <nav>
       <a href="/"><img src="./images/logo.svg" alt="The company's logo"></a>
       <button id="mobileNavButton"><img src="./images/icon-hamburger.svg" alt="Click to open mobile vavigation panel"></button>
+      <aside class="mobileNav">
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </aside>
     </nav>
     <header>
       <div><img src="./images/illustration-intro.svg" alt="" aria-hidden="true" role="presentation"></div>
@@ -125,11 +134,12 @@
     <button class="norm-btn">Get Started</button>
   </section>
   <footer>
-    <div>
+    <div class="input-container">
       <form novalidate class="input-email">
         <input type="email" placeholder="Updates in your inbox…">
         <button>Go</button>
       </form>
+      <p id="err-message">Please insert a valid email</p>
     </div>
     <div class="footerLinks-container">
       <ul>
@@ -163,5 +173,6 @@
   Community
 
   Get Started -->
+  <script src="./app.js"></script>
 </body>
 </html>

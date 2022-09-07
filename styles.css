@@ -30,6 +30,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 button{
   cursor: pointer;
+  transition: .3s;
+}button:hover, button:focus{
+  opacity: 80%;
+  transform: scale(0.98);
 }
 
 .nav-header{
@@ -50,6 +54,30 @@ nav{
   border: none;
   outline: none;
   background-color: transparent;
+}.mobileNav{
+  position: absolute;
+  display: none;
+  width: 90%;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}.mobileNav ul{
+  list-style: none;
+  padding: 3em 0%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: center;
+  border-radius: 5px;
+}.mobileNav a{
+  text-decoration: none;
+  color: #242d52;
+  font-size: 1rem;
+  font-weight: 700;
+}.mobileNav a:hover, .mobileNav a:focus{
+  color: #9095a7;
 }
 header{
   padding: 0 2.5%;
@@ -234,15 +262,16 @@ footer{
   background-color: hsl(233, 12%, 13%);
   padding: 2em 1em 1em;
 }
-.input-email{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.input-container{
   margin: 0 auto;
   margin-bottom: 2em;
   max-width: 560px;
+}.input-email{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }.input-email input{
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   width: 70%;
   padding: .7em 1.2em;
@@ -258,6 +287,16 @@ footer{
   background-color: #f25f3a;
   padding: .7em 0;
   border-radius: 27px;
+  text-transform: uppercase;
+  font-weight: 700;
+}#err-message{
+  font-size: .8rem;
+  color: #f25f3a;
+  padding: 2% 0 0 5%;
+  display: none;
+}.error{
+  border-color: #f25f3a !important;
+  color: #f25f3a;
 }
 
 .footerLinks-container{
@@ -276,6 +315,8 @@ footer{
   text-decoration: none;
   font-weight: 400;
   line-height: 2;
+}.footerLinks-container a:hover, .footerLinks-container a:focus{
+  color: #f25f3a;
 }
 .footerImg-Links ul{
   width: 95%;
@@ -288,7 +329,10 @@ footer{
   justify-content: space-between;
 }.footerImg-Links img{
   transform: scale(1.4);
-}.footerImg-Links div{
+}.footerImg-Links img:hover, .footerImg-Links img:focus{
+  filter: invert(62%) sepia(44%) saturate(1644%) hue-rotate(336deg) brightness(102%) contrast(101%);
+}
+.footerImg-Links div{
   display: flex;
   align-items: center;
   justify-content: center;
