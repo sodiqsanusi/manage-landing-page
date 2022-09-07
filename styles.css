@@ -262,15 +262,16 @@ footer{
   background-color: hsl(233, 12%, 13%);
   padding: 2em 1em 1em;
 }
-.input-email{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.input-container{
   margin: 0 auto;
   margin-bottom: 2em;
   max-width: 560px;
+}.input-email{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }.input-email input{
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   width: 70%;
   padding: .7em 1.2em;
@@ -288,6 +289,14 @@ footer{
   border-radius: 27px;
   text-transform: uppercase;
   font-weight: 700;
+}#err-message{
+  font-size: .8rem;
+  color: #f25f3a;
+  padding: 2% 0 0 5%;
+  display: none;
+}.error{
+  border-color: #f25f3a !important;
+  color: #f25f3a;
 }
 
 .footerLinks-container{
