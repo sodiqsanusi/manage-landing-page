@@ -41,14 +41,46 @@ button{
   background-position: -100% -20%;
   background-repeat: no-repeat;
   background-size: 120%;
+}.largeScreenNav{
+  display: none;
+  list-style: none;
+  padding: 0%;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  max-width: 505px;
+}.largeScreenNav a{
+  color: #242d52;
+  text-decoration: none;
+  font-size: .95rem;
+}.largeScreenNav a:hover, .largeScreenNav a:focus{
+  color: #9095a7;
+}
+.largeScreenNavButton{
+  display: none;
+  background-color: #f25f3a;
+  box-shadow: #f25f3a 0px 10px 10px -10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: .5em 0;
+  border-radius: 27px;
+  font-size: .95rem;
+  width: 18%;
+  max-width: 145px;
 }
 
 nav{
   padding: 2em 1em;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#navImage{
+  transform: translateY(17%);
 }
 #mobileNavButton{
   border: none;
@@ -342,4 +374,79 @@ footer{
   font-size: .8rem;
   text-align: center;
   color: #9095a7;
+}
+
+@media(min-width: 750px){
+  #mobileNavButton{
+    display: none;
+  }.largeScreenNav{
+    display: flex;
+  }.largeScreenNavButton{
+    display: block;
+  }
+  .nav-header{
+    background-size: min(70%, 650px);
+    background-position: 110% -86px;
+  }
+  header{
+    flex-direction: row-reverse;
+    background-image: none;
+    text-align: left;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+  }.headerArticle{
+    width: 45%;
+  }.headerArticle h1{
+    font-size: 2.3rem;
+  }.headerArticle p{
+    margin-left: 0%;
+    font-size: 1.05rem;
+  }header div{
+    width: 50%;
+    margin: 0%;
+  }
+
+  main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }.common-article{
+    text-align: left;
+    width: 45%;
+  }.common-article h2{
+    font-size: 2.15rem;
+  }.common-article p{
+    max-width: 350px;
+    margin-left: 5%;
+  }
+  .main-list{
+    width: 48%;
+  }.ad-list div{
+    background-color: transparent;
+  }.ad-list p{
+    margin-right: 0;
+    margin-left: auto;
+    width: 82.5%;
+  }
+
+  .simplify-section{
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 3em 8%;
+    background-image: url('./images/bg-simplify-section-desktop.svg');
+    background-size: cover;
+  }.simplify-section p{
+    max-width: 450px;
+    font-size: 2.2rem;
+  }.simplify-section button{
+    margin: 0;
+    width: 20%;
+    align-self: center;
+  }
 }
