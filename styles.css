@@ -384,4 +384,27 @@ footer{
   }.largeScreenNavButton{
     display: block;
   }
+  .nav-header{
+    background-size: min(70%, 650px);
+    background-position: 110% -86px;
+  }
+  header{
+    flex-direction: row-reverse;
+    background-image: none;
+    text-align: left;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+  }.headerArticle{
+    width: 45%;
+  }.headerArticle h1{
+    font-size: 2.3rem;
+  }.headerArticle p{
+    margin-left: 0%;
+    font-size: 1.05rem;
+  }header div{
+    width: 50%;
+    margin: 0%;
+  }
 }
