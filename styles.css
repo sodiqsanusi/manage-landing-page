@@ -407,4 +407,30 @@ footer{
     width: 50%;
     margin: 0%;
   }
+
+  main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }.common-article{
+    text-align: left;
+    width: 45%;
+  }.common-article h2{
+    font-size: 2.15rem;
+  }.common-article p{
+    max-width: 350px;
+    margin-left: 5%;
+  }
+  .main-list{
+    width: 48%;
+  }.ad-list div{
+    background-color: transparent;
+  }.ad-list p{
+    margin-right: 0;
+    margin-left: auto;
+    width: 82.5%;
+  }
 }
