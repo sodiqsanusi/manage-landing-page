@@ -41,14 +41,46 @@ button{
   background-position: -100% -20%;
   background-repeat: no-repeat;
   background-size: 120%;
+}.largeScreenNav{
+  display: none;
+  list-style: none;
+  padding: 0%;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  max-width: 505px;
+}.largeScreenNav a{
+  color: #242d52;
+  text-decoration: none;
+  font-size: .95rem;
+}.largeScreenNav a:hover, .largeScreenNav a:focus{
+  color: #9095a7;
+}
+.largeScreenNavButton{
+  display: none;
+  background-color: #f25f3a;
+  box-shadow: #f25f3a 0px 10px 10px -10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: .5em 0;
+  border-radius: 27px;
+  font-size: .95rem;
+  width: 18%;
+  max-width: 145px;
 }
 
 nav{
   padding: 2em 1em;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#navImage{
+  transform: translateY(17%);
 }
 #mobileNavButton{
   border: none;
@@ -342,4 +374,14 @@ footer{
   font-size: .8rem;
   text-align: center;
   color: #9095a7;
+}
+
+@media(min-width: 750px){
+  #mobileNavButton{
+    display: none;
+  }.largeScreenNav{
+    display: flex;
+  }.largeScreenNavButton{
+    display: block;
+  }
 }
